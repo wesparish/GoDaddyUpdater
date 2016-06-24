@@ -28,7 +28,7 @@ for domain in domain_list:
         if publicIP != record["data"]:
           updateResult = userClient.update_record_ip(publicIP, domain, name=a_record, record_type='A')
           if updateResult is True:
-            print('Update ended with no Exception.')
+            print('Update ended with no Exception. %s.%s now assigned IP %s'  %(a_record, domain, publicIP))
         else:
           print('No DNS update needed.')
     except:
