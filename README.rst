@@ -29,6 +29,14 @@ Third, clone this repo and execute the tool.
     $ git clone https://github.com/wesparish/GoDaddyUpdater
 ..
 
+Building
+--------
+.. code-block:: bash
+
+  $ docker build  -t wesparish/godaddyupdater .
+  $ docker push wesparish/godaddyupdater
+..
+
 Examples
 --------
 
