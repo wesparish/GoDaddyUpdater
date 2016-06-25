@@ -17,5 +17,5 @@ RUN pip install requests
 RUN pip install godaddypy
 RUN pip install pif
 
-CMD while /bin/true; do /usr/bin/GoDaddyUpdater.py; /bin/sleep 10; done
+CMD while /bin/true; do /usr/bin/GoDaddyUpdater.py; /bin/sleep 60; done
 
