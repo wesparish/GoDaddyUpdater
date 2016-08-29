@@ -9,7 +9,7 @@
 
 FROM python
 
-MAINTAINER Wes Parish version: 0.1
+MAINTAINER Wes Parish version: 0.2.0
 
 ADD GoDaddyUpdater.py /usr/bin/GoDaddyUpdater.py
 
