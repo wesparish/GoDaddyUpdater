@@ -16,7 +16,10 @@ create_missing_records = os.environ.get('GODADDY_CREATE_MISSING_RECORDS', True)
 
 userAccount = Account(api_key=key, api_secret=secret_key)
 userClient = Client(userAccount)
-publicIP = pif.get_public_ip('ident.me')
+
+publicIP = False
+while not publicIP:
+  publicIP = pif.get_public_ip('ident.me')
 
 for domain in domain_list:
   for a_record in a_record_list:
