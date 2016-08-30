@@ -33,7 +33,7 @@ Building
 --------
 .. code-block:: bash
 
-  $ docker build  -t wesparish/godaddyupdater .
+  $ docker build --no-cache -t wesparish/godaddyupdater .
   $ docker push wesparish/godaddyupdater
 ..
 
