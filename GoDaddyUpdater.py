@@ -19,7 +19,7 @@ userClient = Client(userAccount)
 
 publicIP = False
 while not publicIP:
-  publicIP = pif.get_public_ip('ident.me')
+  publicIP = pif.get_public_ip()
 
 for domain in domain_list:
   for a_record in a_record_list:
