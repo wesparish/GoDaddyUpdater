@@ -33,7 +33,7 @@ for domain in domain_list:
                           "type": 'A',
                           "name": a_record,
                           "data": publicIP,
-                          "ttl": 1,
+                          "ttl": 600,
                         }
           add_record_result = userClient.add_record(domain, new_record)
           if not add_record_result:
