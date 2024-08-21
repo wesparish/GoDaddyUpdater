@@ -1,5 +1,12 @@
+No Longer Supported
+===================
+
+NOTE: This repo is basically useless now, as GoDaddy requires 50+ domains to
+access their API. I am moving to Cloudflare for my DNS needs.
+
 GoDaddyUpdater
 ==============
+
 Python tool used to update existing GoDaddy A-record DNS entries to current external IP address.
 
 Source located @ https://github.com/wesparish/GoDaddyUpdater
