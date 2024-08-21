@@ -1,0 +1,2 @@
+#!/command/execlineb -S1
+bash /etc/s6-overlay/scripts/run.sh

@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
 
 # Full package imports
-import sys
-
+import os
 import pif
+import sys
+import time
+
+from dotenv import load_dotenv
 from godaddypy import Client, Account
 
-import os
+load_dotenv()  # take environment variables from .env.
 
 key = os.environ['GODADDY_KEY']
 secret_key = os.environ['GODADDY_SECRET']
@@ -20,6 +23,9 @@ userClient = Client(userAccount)
 publicIP = False
 while not publicIP:
   publicIP = pif.get_public_ip()
+  if not publicIP:
+    print("Unable to get public IP. Retrying in 5 seconds.")
+    time.sleep(5)
 
 for domain in domain_list:
   for a_record in a_record_list:
